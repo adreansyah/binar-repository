@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.container {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.header-banner {
+  background-color: #f1f3ff;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+}
+
+.header-logo {
+  width: 100px;
+  height: 34px;
+  background-color: #0d28a6;
+}
+
+.header-navlink {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.header-navlink ul,
+li > a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
+.header-navlink ul,
+li > a:hover {
+  color: #0d28a6;
+}
+
+.hero-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.hero-banner-car-grid {
+  width: 704px;
+  height: 407px;
+}
+
+.hero-banner-car {
+  position: absolute;
+  right: 0;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 54px;
+}
+.hero-paragraph {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.hero-btn-banner {
+  padding: 8px 12px 8px 12px;
+  border-radius: 2px;
+  background-color: #5cb85f;
+  border: none;
+  display: block;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.hero-btn-banner:hover {
+  opacity: 0.8;
+}
+
+.section-services {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5rem;
+  padding-inline-start: 5rem;
+  padding-inline-end: 5rem;
+  padding-top: 6rem;
+}
+.section-service-title {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.section-service-paragraph {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.section-service-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+}
+.section-list-style {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.section-list-title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.section-whyus {
+  padding-top: 6rem;
+}
+
+.section-whyus-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.section-box-whyus {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+}
+
+.section-box-whyu-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section-whyus-title {
+  margin: 0;
+}
+.section-whyus-paragraph {
+  margin: 0;
+}
