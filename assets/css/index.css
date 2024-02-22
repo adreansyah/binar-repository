@@ -308,8 +308,71 @@ h2 {
   width: 36%;
   text-align: center;
 }
+.section-faq {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  padding-top: 6rem;
+}
+.section-list-faq {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+.box-list-faq {
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-title-faq {
+  display: flex;
+  flex-direction: column;
+}
+footer,
+.section-footer {
+  padding-top: 6rem;
+  display: grid;
+  gap: 5rem;
+  margin-bottom: 6rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
-@media only screen and (min-width: 1200px) {
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-services {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-icon-img {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1900px) {
   .header-banner {
     position: relative;
   }
@@ -323,7 +386,7 @@ h2 {
   }
   .section-whyus-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
   }
 }
@@ -335,6 +398,9 @@ h2 {
 }
 
 @media only screen and (max-width: 900px) {
+  .header-navlink {
+    display: none;
+  }
   .section-services {
     display: flex;
     justify-content: center;
@@ -368,6 +434,9 @@ h2 {
 }
 
 @media only screen and (max-width: 768px) {
+  .header-navlink {
+    display: none;
+  }
   .hero-banner {
     display: grid;
     grid-template-columns: 1fr;
@@ -377,6 +446,9 @@ h2 {
 }
 
 @media only screen and (max-width: 576px) {
+  .header-navlink {
+    display: none;
+  }
   .car-banner {
     max-inline-size: 100%;
     block-size: auto;
@@ -388,6 +460,9 @@ h2 {
 }
 
 @media only screen and (max-width: 450px) {
+  .header-navlink {
+    display: none;
+  }
   .car-banner {
     max-inline-size: 100%;
     block-size: auto;
@@ -445,5 +520,44 @@ h2 {
     text-align: center;
     gap: 2rem;
     align-items: center;
+  }
+
+  .section-faq {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 6rem;
+    gap: 1rem;
+  }
+  .section-list-faq {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+  .box-list-faq {
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section-title-faq {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .section-title-faq,
+  h2 {
+    font-size: 26px;
+  }
+  footer,
+  .section-footer {
+    padding-top: 6rem;
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 6rem;
+    grid-template-columns: 1fr;
   }
 }
