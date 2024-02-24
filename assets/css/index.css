@@ -372,6 +372,55 @@ footer,
   gap: 18px;
 }
 
+.btn-menu {
+  display: none;
+  padding: 8px;
+  font-size: 24px;
+  background: transparent;
+  border: none;
+}
+.responsive-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  background: #0000006b;
+  height: 100vh;
+  z-index: 10;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: unset;
+  position: absolute;
+  right: 0;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  background: white;
+  margin: 0;
+  height: 100vh;
+  width: 40%;
+  gap: 2rem;
+}
+.nav-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.nav-title,
+span {
+  font-size: 18px;
+  font-weight: 700;
+}
+.btn-close {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
 @media only screen and (min-width: 1400px) and (max-width: 1900px) {
   .header-banner {
     position: relative;
@@ -400,6 +449,16 @@ footer,
 @media only screen and (max-width: 900px) {
   .header-navlink {
     display: none;
+  }
+  .responsive-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background: #0000006b;
+    height: 100vh;
+    z-index: 10;
   }
   .section-services {
     display: flex;
@@ -431,11 +490,28 @@ footer,
     padding-right: 2rem;
     width: 619px;
   }
+  .btn-menu {
+    display: block;
+    padding: 8px;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .header-navlink {
     display: none;
+  }
+  .responsive-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background: #0000006b;
+    height: 100vh;
+    z-index: 10;
   }
   .hero-banner {
     display: grid;
@@ -443,11 +519,28 @@ footer,
     align-items: center;
     margin-top: 3rem;
   }
+  .btn-menu {
+    display: block;
+    padding: 8px;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+  }
 }
 
 @media only screen and (max-width: 576px) {
   .header-navlink {
     display: none;
+  }
+  .responsive-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background: #0000006b;
+    height: 100vh;
+    z-index: 10;
   }
   .car-banner {
     max-inline-size: 100%;
@@ -457,11 +550,28 @@ footer,
     max-width: 704px;
     height: 320px;
   }
+  .btn-menu {
+    display: block;
+    padding: 8px;
+    font-size: 24px;
+    background: transparent;
+    border: none;
+  }
 }
 
 @media only screen and (max-width: 450px) {
   .header-navlink {
     display: none;
+  }
+  .responsive-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    background: #0000006b;
+    height: 100vh;
+    z-index: 10;
   }
   .car-banner {
     max-inline-size: 100%;
@@ -559,5 +669,12 @@ footer,
     gap: 1rem;
     margin-bottom: 6rem;
     grid-template-columns: 1fr;
+  }
+  .btn-menu {
+    display: block;
+    padding: 8px;
+    font-size: 24px;
+    background: transparent;
+    border: none;
   }
 }

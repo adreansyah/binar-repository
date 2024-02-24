@@ -1,13 +1,13 @@
 (() => {
-    const form = document.getElementById('form-submit');
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const name = document.getElementById('name')
-        const phone = document.getElementById('phone')
-        const pname = document.getElementById('p-name')
-        const pphone = document.getElementById('p-phone')
-        pname.innerText = name.value
-        pphone.innerText = phone.value
-    });
-
+    const btnOpen = document.getElementById('btn-open');
+    const btnClose = document.getElementById('btn-close');
+    const toggle = document.getElementById('toggle');
+    const openbar = () => {
+        toggle.style.display = 'block';
+    }
+    const closebar = () => {
+        toggle.style.display = 'none';
+    }
+    btnOpen.addEventListener('click', openbar);
+    btnClose.addEventListener('click', closebar);
 })();
